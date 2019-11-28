@@ -1,5 +1,5 @@
 node('windows') {
   stage("Run Pipeline") {
-    sh "dotnet build"
+    bat "dotnet build"
   }
 }
