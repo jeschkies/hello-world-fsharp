@@ -8,8 +8,6 @@ node('windows') {
     ''')
   }
   stage("Build") {
-    powershell(returnStatus: true, script:'''
-      dotnet build
-    ''')
+    bat "dotnet build"
   }
 }
