@@ -5,7 +5,7 @@ node('windows') {
 
       choco install dotnetcore-sdk --confirm
       refreshenv
-      echo %PATH%
+      echo %%PATH%%
     ''')
   }
   stage("Build") {
