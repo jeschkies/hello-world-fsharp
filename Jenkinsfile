@@ -9,6 +9,6 @@ node('windows') {
     ''')
   }
   stage("Build") {
-    bat "dotnet build"
+    powerShell "dotnet build"
   }
 }
